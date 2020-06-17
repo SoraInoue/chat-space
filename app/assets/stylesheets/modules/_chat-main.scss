@@ -1,4 +1,16 @@
 .chat-main {
   width: calc(100vw - 300px);
   float: left;
+  &__group-info {
+    height: 100px;
+    border-bottom: solid 1px #eeeeee;
+  }
+  &__message-list {
+    height: calc(100vh - 190px);
+    background-color: #fafafa;
+  }
+  &__message-from {
+    height: 90px;
+    background-color: #d2d2d2;
+  }
 }

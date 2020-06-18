@@ -13,6 +13,7 @@
       height: 20px;
       display: flex;
       justify-content: space-between;
+      font-size: 16px;
       font-weight: bold;
       &__menu {
         display: flex;
@@ -25,9 +26,24 @@
   &__group-list {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
+    padding: 20px 20px 0;
+    text-decoration: none;
+    &__box {
+      margin-bottom: 40px;
+      &__group-name {
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+      &__latest-message {
+        font-size: 11px;
+      }
+    }
+  }
+  li{
+    margin-left: 5px;
   }
   a{
     color: white;
-    margin-left: 5px;
+    text-decoration: none;
   }
 }

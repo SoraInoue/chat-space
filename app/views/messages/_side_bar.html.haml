@@ -1,3 +1,12 @@
 .side-bar
-  .side-bar__user-name
+  .side-bar__header
+    .side-bar__header__box
+      %p.side-bar__header__box__username take
+      %ul.side-bar__header__box__menu
+        %li.side-bar__header__box__menu__new-group
+          = link_to "#" do
+            = icon('fa', 'edit')
+        %li.side-bar__header__box__menu__edit-user
+          = link_to "#" do
+            = icon('fa', 'cog')
   .side-bar__group-list

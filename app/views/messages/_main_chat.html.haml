@@ -9,4 +9,16 @@
       .chat-main__group-info__edit-btn
         Edit
   .chat-main__message-list
-  .chat-main__message-from
+    .chat-main__message-list__box
+      .chat-main__message-list__box__upper-info
+        %p.chat-main__message-list__box__upper-info__talker ああああ
+        %p.chat-main__message-list__box__upper-info__date 2020/06/18
+      %p.chat-main__message-list__box__text a
+  .chat-main__message-form
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn"}

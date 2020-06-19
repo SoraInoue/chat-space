@@ -1,28 +1,35 @@
 .chat-main {
   width: calc(100vw - 300px);
   float: left;
+
   &__group-info {
     height: 100px;
     border-bottom: solid 1px #eeeeee;
     padding: 0 40px;
     display: flex;
     justify-content: space-between;
+
     &__left-box {
       margin-top: 35px;
+
       &__current-group {
         font-size: 20px;
         color: #333333;
         margin-bottom: 15px;
       }
+
       &__member-list {
         font-size: 12px;
         color: #999999;
         display: flex;
       }
+
     }
+
     a {
       color: #38aef0;
     }
+
     &__edit-btn {
       height: 40px;
       width: 72px;
@@ -33,59 +40,78 @@
       position: absolute;
       right: 40px;
     }
+
   }
+
   &__message-list {
     height: calc(100vh - 190px);
     background-color: #fafafa;
     padding: 35px 40px;
+
     &__box {
       padding-bottom: 46px;
+
       &__upper-info {
         margin-bottom: 12px;
         display: flex;
+
         &__talker {
           color: #333333;
           font-size: 16px;
         }
+
         &__date {
           color: #999999;
           font-size: 12px;
           margin-left: 10px;
         }
+
       }
+
       &__text {
         color: #434a54;
         font-size: 14px;
       }
+
     }
+
   }
+
   &__message-form {
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px;
+
     form {
       display: flex;
+
       .input-box {
         display: flex;
         width: 100%;
         position: relative;
+
         &__text {
           height: 50px;
           width: 100%;
           border-style: none;
           padding: 0 40px 0 10px;
         }
+
         &__image {
           position: absolute;
           top: 10px;
           right: 10px;
           cursor: pointer;
           font-size: 1.3rem;
+
           &__file {
             display: none;
           }
+
         }
+
       }
+
       .submit-btn {
         width: 100px;
         height: 50px;
@@ -95,8 +121,11 @@
         margin-left: 15px;
         cursor: pointer;
       }
+
     }
+
   }
+  
 }
 
 

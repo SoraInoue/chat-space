@@ -1,0 +1,20 @@
+.side-bar
+  .side-bar__header
+    .side-bar__header__box
+      %p.side-bar__header__box__username take
+      %ul.side-bar__header__box__menu
+        %li.side-bar__header__box__menu__new-group
+          = link_to "#" do
+            = icon('fa', 'edit')
+        %li.side-bar__header__box__menu__edit-user
+          = link_to "#" do
+            = icon('fa', 'cog')
+  .side-bar__group-list
+    = link_to "#" do
+      .side-bar__group-list__box
+        %p.side-bar__group-list__box__group-name b
+        %p.side-bar__group-list__box__latest-message まだメッセージがありません
+    = link_to "#" do
+      .side-bar__group-list__box
+        %p.side-bar__group-list__box__group-name c
+        %p.side-bar__group-list__box__latest-message まだメッセージがありません

@@ -109,7 +109,7 @@ $(function(){
   });
 
   var reloadMessages = function() {
-    var last_message_id = $('.message:last').data("message-id");
+    var last_message_id = $('.chat-main__message-list__box:last').data("message-id");
     $.ajax({
       url: "api/messages",
       type: 'get',
